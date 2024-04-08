@@ -1,0 +1,162 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 50px auto;
+    padding: 0;
+    border-radius: 20px;
+    width: 90vw;
+    border: 2px solid #BB2525;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    background-color: #FF6969;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.wrapper{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+*{overflow: hidden;}
+
+header{
+    border-bottom: 2px solid #BB2525;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.setTime{
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+.fa-gear{
+    transition: 0.5s;
+}
+
+.main{
+    height: 40vh;
+    width: 70%;
+    border: 2px solid #BB2525;
+    border-radius: 15%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.whole{
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.time h1{
+    font-size: 1.6rem;
+    /* border: 1px solid white; */
+}
+
+#selector{
+    /* border: 1px solid black; */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 200px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    background-color: rgb(222, 45, 45);
+    color: white;
+    transform: translateX(101%);
+    transition: 0.5s;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+.work, .shortBreak{
+    text-align: center;
+}
+
+.theme{
+    text-align: center;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.themeSwitch{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.functions{
+    /* border: 1px solid black; */
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fa-solid{
+    font-size: 20px;
+}
+
+.info-content{
+    border: 1px solid black;
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    scale: 0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.fa-xmark{
+    color: white;
+}
+
+@media screen and (min-width:766px){
+    body{
+        /* border: 1px solid red; */
+        width: 60%;
+        margin: 75px auto;
+    }
+}
+
+@media screen and (min-width: 1021px){
+    body{
+        width: 30%;
+        margin: 70px auto;
+    }
+}
+
